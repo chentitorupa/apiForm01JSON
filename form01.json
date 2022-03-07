@@ -1,0 +1,61 @@
+{
+	"schema": {
+		"menu": {
+			"type": "array",
+			"title": "Características",
+			"items": {
+				"type": "string",
+				"title": "Option",
+				"enum": [
+					"starter",
+					"maincourse",
+					"cheese",
+					"dessert"
+				]
+			}
+		},
+		"flag": {
+			"type": "boolean",
+			"title": "Aceptar términos"
+		},
+		"menu2": {
+			"type": "array",
+			"title": "Características 2",
+			"items": {
+				"type": "string",
+				"title": "Option",
+				"enum": [
+					"Caracteristica 1",
+					"Caracteristica 2",
+					"Caracteristica 3",
+					"Caracteristica 4"
+				]
+			}
+		}
+	},
+	"form": [{
+			"key": "menu",
+			"type": "checkboxes",
+			"titleMap": {
+				"starter": "Starter would be great",
+				"maincourse": "No way I'll skip the main course",
+				"cheese": "Cheddar rules!",
+				"dessert": "Thumbs up for a dessert"
+			}
+		},
+		{
+			"key": "flag",
+			"inlinetitle": "Check this box if you are over 18"
+		},
+		{
+			"key": "menu2",
+			"type": "checkboxes",
+			"titleMap": {
+				"Caracteristica 1": "Esto es la característica 1",
+				"Caracteristica 2": "Esto es la característica 2",
+				"Caracteristica 3": "Esto es la característica 3",
+				"Caracteristica 4": "Esto es la característica 4"
+			}
+		}
+	]
+}
